@@ -187,6 +187,7 @@ function data_fetch_certifications() {
         </div>
 
         <div class="cert-download-form">
+            <?php echo do_shortcode('[contact-form-7 id="11" title="Contact form 1"]'); ?>
             <form>
                 <p class="form-title">Download accreditation below</p>
                 <div class="cert-field">

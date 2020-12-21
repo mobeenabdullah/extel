@@ -15,6 +15,14 @@
 						$('.certification__popup-content--right h4').hide();
 						$('.certification__popup-content--right .cert-content').hide();
 					}
+
+					$('form.wpcf7-form').each(function() {
+						var action = $(this).attr('action');
+						action = action.substring(action.indexOf('#'));
+						$(this).attr('action', action);
+				
+						wpcf7.initForm($(this));
+					});
 				}
 			});
 		}
