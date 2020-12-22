@@ -103,7 +103,7 @@ function show_certifications() {
             <!-- ./Single Certification -->
 
             <?php endwhile;
-        endif; ?>
+        endif; wp_reset_postdata(); ?>
     </div>
 
     <?php $content = ob_get_clean();
