@@ -170,10 +170,10 @@ function data_fetch_certifications() {
                 $next_certificate_id = cpt_get_adjacent_ID('next', 'certification', $get_certificate->ID);
             ?>
             <li>
-                <span class="prev-accreditation accreditation-adjacent" data-certificate-id="<?php echo $prev_certificate_id; ?>"><i class="dashicons dashicons-arrow-left-alt2"></i> Prev. accreditation</span>
+                <span class="prev-accreditation accreditation-adjacent" data-certificate-id="<?php echo $prev_certificate_id; ?>"><i class="dashicons dashicons-arrow-left-alt2"></i>Prev. accreditation</span>
             </li>
             <li>
-                <span class="next-accreditation accreditation-adjacent" data-certificate-id="<?php echo $next_certificate_id; ?>">Next. accreditation <i class="dashicons dashicons-arrow-right-alt2"></i></span>
+                <span class="next-accreditation accreditation-adjacent" data-certificate-id="<?php echo $next_certificate_id; ?>">Next. accreditation<i class="dashicons dashicons-arrow-right-alt2"></i></span>
             </li>
         </ul>
     </div>
@@ -188,7 +188,6 @@ function data_fetch_certifications() {
 
         <div class="cert-download-form">
             <?php echo do_shortcode('[contact-form-7 id="2126" title="Untitled"]'); ?>
-            <p class="form-notice-text">Thank you. A copy of this accreditation has been sent to your email.</p>
         </div>
     </div>
     <?php

@@ -117,8 +117,15 @@
     .cert-next-prev
     li
     .accreditation-adjacent
+    .dashicons {
+    font-size: 16px;
+}
+.certification__popup-content--left
+    .cert-next-prev
+    li
+    .accreditation-adjacent
     i {
-    transform: translateY(4px);
+    transform: translateY(7px);
 }
 .certification__popup-content--left .cert-next-prev li:first-child {
     float: left;
