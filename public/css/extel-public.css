@@ -185,10 +185,13 @@
     background-color: #ffaa46;
     border-radius: 10px;
 }
-.cert-download-form .form-notice-text {
+.cert-download-form .form-notice-text,
+.wpcf7-response-output {
     font-size: 14px;
     font-family: sans-serif;
     color: #707070;
+    border: none !important;
+    padding: 0 !important;
 }
 .certification__popup .close__popup {
     position: absolute;
@@ -206,4 +209,9 @@
     color: #204063;
     cursor: pointer;
     transition: all 0.2s;
+}
+
+/* Extra CSS */
+.logged-in div.wpcf7 {
+    margin-top: 30px !important;
 }
