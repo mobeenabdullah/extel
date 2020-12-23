@@ -41,8 +41,8 @@
 }
 
 .single-certification .certification-info h4 {
-    margin-bottom: 20px;
-    font-size: 30px;
+    margin-bottom: 30px;
+    font-size: 28px;
     color: #5f6f7e;
     line-height: 1;
     font-family: 'PT Sans', Sans-serif;
@@ -55,16 +55,23 @@
 }
 
 .single-certification .certification-buttons li {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .single-certification .certification-buttons li a {
-    display: inline-block;
-    padding: 3px 15px;
-    font-size: 16px;
-    color: #000;
+    padding: 12px 24px;
+    color: #000000;
+    font-size: 15px;
+    font-family: 'PT Sans', Sans-serif;
+    font-weight: 500;
+    background-color: #ffffff;
     border: 2px solid #ffaa46;
     border-radius: 10px;
+}
+
+.single-certification .certification-buttons li a:hover {
+    color: #ffffff;
+    background-color: #ffaa46;
 }
 
 /* CERTIFICATION POPUP */
