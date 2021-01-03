@@ -222,3 +222,71 @@
 .logged-in div.wpcf7 {
     margin-top: 30px !important;
 }
+
+/* Post Grid Styling */
+.eael-post-grid-container .eael-grid-post-holder {
+    border: none;
+}
+
+.eael-post-grid-container .eael-entry-overlay {
+    display: none;
+}
+
+.eael-post-grid-container .eael-entry-thumbnail {
+    margin-bottom: 20px;
+}
+.eael-post-grid-container .eael-entry-wrapper {
+    padding: 0 !important;
+}
+
+.eael-post-grid-container .eael-entry-wrapper .eael-entry-header {
+    font-family: 'sommet', Sans-serif;
+    font-size: 1.333rem;
+    line-height: 1.5;
+    color: #3a3a3a;
+}
+
+.eael-post-grid-container .eael-entry-wrapper .eael-entry-content {
+    margin-bottom: 20px;
+    font-family: 'PT Sans', Sans-serif;
+    font-size: 16px !important;
+    line-height: 1.5;
+    color: #707070;
+}
+
+.eael-post-grid-container .eael-entry-wrapper .eael-entry-content p {
+    margin-bottom: 10px;
+}
+
+.eael-post-grid-container .eael-entry-wrapper .eael-entry-meta {
+    margin-bottom: 5px;
+    font-family: 'sommet', Sans-serif;
+    font-size: 15px;
+    color: #0e7de6;
+}
+
+.eael-post-grid-container .eael-entry-wrapper .eael-entry-meta .eael-posted-on {
+    padding: 0 !important;
+}
+
+.eael-post-grid-container
+    .eael-entry-wrapper
+    .eael-entry-meta
+    .eael-posted-on:before {
+    display: none;
+}
+
+.eael-post-grid-container
+    .eael-entry-wrapper
+    .eael-entry-content
+    .eael-post-elements-readmore-btn {
+    color: #ffaa46 !important;
+    border: 2px solid #ffaa46;
+    padding: 7px 25px;
+    font-family: 'PT Sans', Sans-serif;
+    font-size: 16px;
+    border-radius: 6px;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+}
