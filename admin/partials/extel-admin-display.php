@@ -92,7 +92,7 @@ function show_certifications() {
                 </div>
                 <div class="certification-info">
                     <h3><a href="#!"><?php the_title(); ?></a></h3>
-                    <h4>Insert purpose</h4>
+                    <h4><?php the_field('certification_tagline'); ?></h4>
                 </div>
                 <ul class="certification-buttons">
                     <li><a href="#!" data-certificate-id="<?php the_ID(); ?>" class='show-readmore-popup'>Read more</a></li>
@@ -179,7 +179,7 @@ function data_fetch_certifications() {
     </div>
     <div class="certification__popup-content--right">
         <h3 class="cert-title"><?php echo $get_certificate->post_title; ?></h3>
-        <span class="cert-subtitle">Explanation of purpose</span>
+        <span class="cert-subtitle"><?php the_field('certification_tagline', $get_certificate->ID); ?></span>
 
         <h4>Overview</h4>
         <div class="cert-content">
