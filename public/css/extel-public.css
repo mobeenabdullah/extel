@@ -52,7 +52,7 @@
     margin-bottom: 30px;
     font-size: 28px;
     color: #5f6f7e;
-    line-height: 1;
+    line-height: 1.4;
     font-family: var(--extel-font-family-pt-sans);
 }
 
@@ -71,7 +71,7 @@
 }
 
 .single-certification .certification-buttons li a {
-    padding: 12px 24px;
+    padding: 8px 24px;
     color: #000000;
     font-size: 15px;
     font-family: var(--extel-font-family-pt-sans);
@@ -81,7 +81,7 @@
     border-radius: 10px;
     flex-grow: 1;
     text-align: center;
-    margin-right: 20px;
+    margin-right: 10px;
     color: var(--extel-orange-color);
 }
 
@@ -308,11 +308,19 @@
     font-weight: bold;
 }
 
+.eael-post-grid-container
+    .eael-entry-wrapper
+    .eael-entry-content
+    .eael-post-elements-readmore-btn:hover {
+    background-color: var(--extel-orange-color);
+    color: #fff;
+}
+
 /*  Meet the Team Page */
 .teamcol .teammemtitle {
     font-size: 24px !important;
     font-family: var(--extel-font-family-sommet);
-    margin-bottom: 10px;
+    margin-bottom: -10px;
     margin-top: 20px;
 }
 .teamtl,
@@ -321,8 +329,8 @@
 .teambtrr h2 {
     font-family: var(--extel-font-family-sommet);
 }
-.teamjobtitle {
-    margin-bottom: 20px;
+.teammjobtitle {
+    margin-bottom: 15px !important;
 }
 
 .teammjobtitle,
@@ -363,6 +371,7 @@
 .modal-footer button:hover {
     background-color: var(--extel-orange-color);
     color: #ffffff;
+    border: 2px solid var(--extel-orange-color);
 }
 
 .keepconnected .wp-caption-text {
@@ -372,4 +381,55 @@
     right: 15px;
     font-size: 18px;
     font-family: 'sommet', Sans-serif !important;
+}
+
+.site-footer .footer-adv a {
+    color: #5f6f7e !important;
+}
+
+.site-footer .footer-adv a:hover {
+    color: var(--extel-orange-color) !important;
+}
+
+.site-footer .icons_co {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+}
+
+.site-footer .icons_co a:hover i {
+    background: var(--extel-orange-color);
+}
+
+.site-footer .touc_in a {
+    color: var(--extel-orange-color) !important;
+    border: 2px solid var(--extel-orange-color);
+    padding: 7px 25px;
+    font-family: var(--extel-font-family-pt-sans);
+    font-size: 16px;
+    border-radius: 6px;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+}
+
+.site-footer .touc_in:hover a {
+    background-color: var(--extel-orange-color) !important;
+    color: #fff !important;
+}
+
+.projects-slider .swiper-pagination {
+    display: none;
+}
+
+.projects-slider figcaption.elementor-image-carousel-caption {
+    width: 100%;
+    transform: translateY(180px);
+}
+
+.certification-2162 .show-download-popup,
+.certification-2158 .show-download-popup,
+.certification-2157 .show-download-popup,
+.certification-2156 .show-download-popup {
+    display: none;
 }
