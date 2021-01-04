@@ -4,6 +4,14 @@
  */
 
 /* CERTIFICATIONS LIST */
+
+:root {
+    --extel-gray-color: #5F6F7E;
+    --extel-orange-color: #FFAA46; 
+    
+    --extel-font-family-pt-sans: 'PT Sans', Sans-serif !important;
+    --extel-font-family-sommet: 'sommet', Sans-serif !important;
+}
 .certifications-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -33,7 +41,7 @@
 
 .single-certification .certification-info h3 {
     font-size: 36px;
-    font-family: 'sommet', Sans-serif;
+    font-family: var(--extel-font-family-sommet);
 }
 
 .single-certification .certification-info h3 a {
@@ -45,33 +53,42 @@
     font-size: 28px;
     color: #5f6f7e;
     line-height: 1;
-    font-family: 'PT Sans', Sans-serif;
+    font-family: var(--extel-font-family-pt-sans);
 }
 
 .single-certification .certification-buttons {
     margin: 0;
     list-style-type: none;
     font-family: sans-serif;
+    display: flex;
 }
 
 .single-certification .certification-buttons li {
     margin-bottom: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    width: 150px;
 }
 
 .single-certification .certification-buttons li a {
     padding: 12px 24px;
     color: #000000;
     font-size: 15px;
-    font-family: 'PT Sans', Sans-serif;
+    font-family: var(--extel-font-family-pt-sans);
     font-weight: 500;
     background-color: #ffffff;
-    border: 2px solid #ffaa46;
+    border: 2px solid  var(--extel-orange-color);
     border-radius: 10px;
+    flex-grow: 1;
+    text-align: center;
+    margin-right: 20px;
+    color:var(--extel-orange-color);
 }
 
 .single-certification .certification-buttons li a:hover {
     color: #ffffff;
-    background-color: #ffaa46;
+    background-color:  var(--extel-orange-color);
+    color: #ffffff;
 }
 
 /* CERTIFICATION POPUP */
@@ -142,7 +159,7 @@
 }
 .certification__popup-content--right .cert-title {
     font-size: 36px;
-    font-family: 'sommet', Sans-serif;
+    font-family: var(--extel-font-family-sommet);
 }
 .certification__popup-content--right .cert-subtitle {
     display: block;
@@ -150,13 +167,13 @@
     font-size: 24px;
     color: #5f6f7e;
     line-height: 1;
-    font-family: 'PT Sans', Sans-serif;
+    font-family: var(--extel-font-family-pt-sans);
 }
 .certification__popup-content--right h4 {
     margin-bottom: 10px;
     font-size: 24px;
     color: #000000;
-    font-family: 'PT Sans', Sans-serif;
+    font-family: var(--extel-font-family-pt-sans);
 }
 .certification__popup-content--right .cert-content {
     padding-right: 20px;
@@ -166,13 +183,13 @@
     font-size: 16px;
     color: #707070;
     line-height: 1.4;
-    font-family: 'PT Sans', Sans-serif;
+    font-family: var(--extel-font-family-pt-sans);
 }
 .cert-download-form .form-title {
     margin-bottom: 10px;
     font-size: 18px;
-    color: #ffaa46;
-    font-family: 'PT Sans', Sans-serif;
+    color:  var(--extel-orange-color);
+    font-family: var(--extel-font-family-pt-sans);
 }
 .cert-download-form .cert-field {
     margin-bottom: 20px;
@@ -184,12 +201,12 @@
     max-width: 400px;
     width: 100%;
     background-color: transparent;
-    border: 2px solid #ffaa46;
+    border: 2px solid  var(--extel-orange-color);
     border-radius: 10px;
 }
 .cert-download-form .cert-field input[type='submit'] {
     padding: 15px 20px;
-    background-color: #ffaa46;
+    background-color:  var(--extel-orange-color);
     border-radius: 10px;
 }
 .cert-download-form .form-notice-text,
@@ -240,7 +257,7 @@
 }
 
 .eael-post-grid-container .eael-entry-wrapper .eael-entry-header {
-    font-family: 'sommet', Sans-serif;
+    font-family: var(--extel-font-family-sommet);
     font-size: 1.333rem;
     line-height: 1.5;
     color: #3a3a3a;
@@ -248,7 +265,7 @@
 
 .eael-post-grid-container .eael-entry-wrapper .eael-entry-content {
     margin-bottom: 20px;
-    font-family: 'PT Sans', Sans-serif;
+    font-family: var(--extel-font-family-pt-sans);
     font-size: 16px !important;
     line-height: 1.5;
     color: #707070;
@@ -260,7 +277,7 @@
 
 .eael-post-grid-container .eael-entry-wrapper .eael-entry-meta {
     margin-bottom: 5px;
-    font-family: 'sommet', Sans-serif;
+    font-family: var(--extel-font-family-sommet);
     font-size: 15px;
     color: #0e7de6;
 }
@@ -280,13 +297,69 @@
     .eael-entry-wrapper
     .eael-entry-content
     .eael-post-elements-readmore-btn {
-    color: #ffaa46 !important;
-    border: 2px solid #ffaa46;
+    color:  var(--extel-orange-color) !important;
+    border: 2px solid  var(--extel-orange-color);
     padding: 7px 25px;
-    font-family: 'PT Sans', Sans-serif;
+    font-family: var(--extel-font-family-pt-sans);
     font-size: 16px;
     border-radius: 6px;
     display: inline-block;
     text-align: center;
     font-weight: bold;
 }
+
+
+
+/*  Meet the Team Page */
+.teamcol .teammemtitle {
+    font-size: 24px !important;
+    font-family: var(--extel-font-family-sommet);
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.teamtl, .abot h2, .teamcareer h2, .teambtrr h2 {
+    font-family: var(--extel-font-family-sommet);
+}
+.teamjobtitle {
+    margin-bottom: 20px;
+}
+
+.teammjobtitle, .teammjobtitle p , .abot p, .teamcareer p, .teambtrr p {
+    font-family: var(--extel-font-family-pt-sans);
+    color: var(--extel-gray-color);   
+}
+
+.biolink button {
+    font-size: 15px;
+    line-height: 1em;
+    padding: 12px 24px;
+    border-radius: 10px;
+    color: var(--extel-orange-color);
+
+}
+
+.biolink button:hover {
+    color: #ffffff;
+}
+
+.btmbuttn button {
+    font-size: 14px;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.modal-footer button {
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-family: var(--extel-font-family-pt-sans);
+    border: 2px solid var(--extel-orange-color);
+}
+
+.modal-footer button:hover {
+    background-color: var(--extel-orange-color);
+    color: #ffffff;
+}
+
+
+
