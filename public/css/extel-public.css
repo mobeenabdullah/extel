@@ -368,8 +368,26 @@
 .keepconnected .wp-caption-text {
     position: absolute;
     top: 0;
-    color: #fff;
+    color: #fff !important;
     right: 15px;
-    font-size: 18px;
-    font-family: var(--extel-font-family-sommet);
+    font-size: 18px !important;
+    font-family: 'sommet', Sans-serif !important;
+}
+.site-footer .footer-adv a {
+    color: var(--extel-gray-color) !important;
+}
+
+.site-footer .footer-adv a:hover {
+    color: var(--extel-orange-color)!important;
+}
+
+.site-footer .icons_co {
+    display: flex;
+    
+}
+.site-footer .icons_co a {
+    color: var(--extel-gray-color) !important;
+}
+.site-footer .icons_co a:hover {
+    color: var(--extel-orange-color)!important;
 }
