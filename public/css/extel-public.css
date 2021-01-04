@@ -368,7 +368,7 @@
 .keepconnected .wp-caption-text {
     position: absolute;
     top: 0;
-    color: #fff;
+    color: #fff !important;
     right: 15px;
     font-size: 18px;
     font-family: var(--extel-font-family-sommet);
