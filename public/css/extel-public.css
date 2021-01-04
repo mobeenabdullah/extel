@@ -371,5 +371,5 @@
     color: #fff !important;
     right: 15px;
     font-size: 18px;
-    font-family: var(--extel-font-family-sommet);
+    font-family: 'sommet', Sans-serif !important;
 }
