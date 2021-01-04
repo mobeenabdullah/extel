@@ -370,29 +370,6 @@
     top: 0;
     color: #fff !important;
     right: 15px;
-<<<<<<< HEAD
-    font-size: 18px !important;
-    font-family: 'sommet', Sans-serif !important;
-}
-.site-footer .footer-adv a {
-    color: var(--extel-gray-color) !important;
-}
-
-.site-footer .footer-adv a:hover {
-    color: var(--extel-orange-color)!important;
-}
-
-.site-footer .icons_co {
-    display: flex;
-    
-}
-.site-footer .icons_co a {
-    color: var(--extel-gray-color) !important;
-=======
     font-size: 18px;
     font-family: 'sommet', Sans-serif !important;
->>>>>>> 134e7adf0160929891edd362695b1aa834743123
-}
-.site-footer .icons_co a:hover {
-    color: var(--extel-orange-color)!important;
 }
