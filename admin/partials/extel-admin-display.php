@@ -83,7 +83,7 @@ function show_certifications() {
             while ( $slidesQuery->have_posts() ) : $slidesQuery->the_post(); ?>
 
             <!-- Single Certification -->
-            <div class='single-certification'>
+            <div class='single-certification certification-<?php the_ID(); ?>'>
             
                 <div class="certification-thumbnail">
                     <a href="#!">

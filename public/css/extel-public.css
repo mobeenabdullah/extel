@@ -71,7 +71,7 @@
 }
 
 .single-certification .certification-buttons li a {
-    padding: 8px 24px;
+    padding: 12px 24px;
     color: #000000;
     font-size: 15px;
     font-family: var(--extel-font-family-pt-sans);
@@ -313,7 +313,7 @@
     .eael-entry-content
     .eael-post-elements-readmore-btn:hover {
     background-color: var(--extel-orange-color);
-    color: #fff;
+    color: #fff !important;
 }
 
 /*  Meet the Team Page */
@@ -374,6 +374,10 @@
     border: 2px solid var(--extel-orange-color);
 }
 
+.keepconnected wp-caption img {
+    cursor: inherit;
+}
+
 .keepconnected .wp-caption-text {
     position: absolute;
     top: 0;
@@ -381,6 +385,8 @@
     right: 15px;
     font-size: 18px;
     font-family: 'sommet', Sans-serif !important;
+    cursor: pointer;
+    pointer-events: none;
 }
 
 .site-footer .footer-adv a {
@@ -432,4 +438,901 @@
 .certification-2157 .show-download-popup,
 .certification-2156 .show-download-popup {
     display: none;
+}
+./**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+/* CERTIFICATIONS LIST */
+
+:root {
+    --extel-gray-color: #5f6f7e;
+    --extel-orange-color: #ffaa46;
+
+    --extel-font-family-pt-sans: 'PT Sans', Sans-serif !important;
+    --extel-font-family-sommet: 'sommet', Sans-serif !important;
+}
+.certifications-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 60px;
+    grid-row-gap: 80px;
+    margin-bottom: 80px;
+}
+
+.single-certifiation {
+}
+
+.single-certification .certification-thumbnail {
+    margin-bottom: 25px;
+}
+
+.single-certification .certification-thumbnail a {
+    display: block;
+}
+
+.single-certification .certification-thumbnail img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+
+.single-certification .certification-info h3 {
+    font-size: 36px;
+    font-family: var(--extel-font-family-sommet);
+}
+
+.single-certification .certification-info h3 a {
+    color: #000;
+}
+
+.single-certification .certification-info h4 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #5f6f7e;
+    line-height: 1.4;
+    font-family: var(--extel-font-family-pt-sans);
+}
+
+.single-certification .certification-buttons {
+    margin: 0;
+    list-style-type: none;
+    font-family: sans-serif;
+    display: flex;
+}
+
+.single-certification .certification-buttons li {
+    margin-bottom: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    width: 150px;
+}
+
+.single-certification .certification-buttons li a {
+    padding: 12px 24px;
+    color: #000000;
+    font-size: 15px;
+    font-family: var(--extel-font-family-pt-sans);
+    font-weight: 500;
+    background-color: #ffffff;
+    border: 2px solid var(--extel-orange-color);
+    border-radius: 10px;
+    flex-grow: 1;
+    text-align: center;
+    margin-right: 10px;
+    color: var(--extel-orange-color);
+}
+
+.single-certification .certification-buttons li a:hover {
+    color: #ffffff;
+    background-color: var(--extel-orange-color);
+    color: #ffffff;
+}
+
+/* CERTIFICATION POPUP */
+.certificationPopup__cover {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 99999;
+}
+.certification__popup {
+    position: relative;
+    padding: 20px;
+    max-width: 1000px;
+    background-color: #ffffff;
+}
+.certification__popup-content {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-column-gap: 20px;
+}
+.certification__popup-content--left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.certification__popup-content--left .cert-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+.certification__popup-content--left .cert-next-prev {
+    margin: 0;
+    list-style-type: none;
+}
+.certification__popup-content--left .cert-next-prev li {
+    display: inline-block;
+}
+.certification__popup-content--left .cert-next-prev li .accreditation-adjacent {
+    display: inline-block;
+    font-size: 16px;
+    color: #000;
+    cursor: pointer;
+}
+.certification__popup-content--left
+    .cert-next-prev
+    li
+    .accreditation-adjacent
+    .dashicons {
+    font-size: 16px;
+}
+.certification__popup-content--left
+    .cert-next-prev
+    li
+    .accreditation-adjacent
+    i {
+    transform: translateY(7px);
+}
+.certification__popup-content--left .cert-next-prev li:first-child {
+    float: left;
+}
+.certification__popup-content--left .cert-next-prev li:last-child {
+    float: right;
+}
+.certification__popup-content--right .cert-title {
+    font-size: 36px;
+    font-family: var(--extel-font-family-sommet);
+}
+.certification__popup-content--right .cert-subtitle {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #5f6f7e;
+    line-height: 1;
+    font-family: var(--extel-font-family-pt-sans);
+}
+.certification__popup-content--right h4 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #000000;
+    font-family: var(--extel-font-family-pt-sans);
+}
+.certification__popup-content--right .cert-content {
+    padding-right: 20px;
+}
+.certification__popup-content--right .cert-content p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #707070;
+    line-height: 1.4;
+    font-family: var(--extel-font-family-pt-sans);
+}
+.cert-download-form .form-title {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: var(--extel-orange-color);
+    font-family: var(--extel-font-family-pt-sans);
+}
+.cert-download-form .cert-field {
+    margin-bottom: 20px;
+}
+
+.cert-download-form .cert-field input[type='text'],
+.cert-download-form .cert-field input[type='email'] {
+    padding: 15px 20px;
+    max-width: 400px;
+    width: 100%;
+    background-color: transparent;
+    border: 2px solid var(--extel-orange-color);
+    border-radius: 10px;
+}
+.cert-download-form .cert-field input[type='submit'] {
+    padding: 15px 20px;
+    background-color: var(--extel-orange-color);
+    border-radius: 10px;
+}
+.cert-download-form .form-notice-text,
+.wpcf7-response-output {
+    font-size: 14px;
+    font-family: sans-serif;
+    color: #707070;
+    border: none !important;
+    padding: 0 !important;
+}
+.certification__popup .close__popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.certification__popup .close__popup span {
+    display: block;
+    width: 35px;
+    height: 35px;
+    line-height: 33px;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 50%;
+    color: #204063;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+/* Extra CSS */
+.logged-in div.wpcf7 {
+    margin-top: 30px !important;
+}
+
+/* Post Grid Styling */
+.eael-post-grid-container .eael-grid-post-holder {
+    border: none;
+}
+
+.eael-post-grid-container .eael-entry-overlay {
+    display: none;
+}
+
+.eael-post-grid-container .eael-entry-thumbnail {
+    margin-bottom: 20px;
+}
+.eael-post-grid-container .eael-entry-wrapper {
+    padding: 0 !important;
+}
+
+.eael-post-grid-container .eael-entry-wrapper .eael-entry-header {
+    font-family: var(--extel-font-family-sommet);
+    font-size: 1.333rem;
+    line-height: 1.5;
+    color: #3a3a3a;
+}
+
+.eael-post-grid-container .eael-entry-wrapper .eael-entry-content {
+    margin-bottom: 20px;
+    font-family: var(--extel-font-family-pt-sans);
+    font-size: 16px !important;
+    line-height: 1.5;
+    color: #707070;
+}
+
+.eael-post-grid-container .eael-entry-wrapper .eael-entry-content p {
+    margin-bottom: 10px;
+}
+
+.eael-post-grid-container .eael-entry-wrapper .eael-entry-meta {
+    margin-bottom: 5px;
+    font-family: var(--extel-font-family-sommet);
+    font-size: 15px;
+    color: #0e7de6;
+}
+
+.eael-post-grid-container .eael-entry-wrapper .eael-entry-meta .eael-posted-on {
+    padding: 0 !important;
+}
+
+.eael-post-grid-container
+    .eael-entry-wrapper
+    .eael-entry-meta
+    .eael-posted-on:before {
+    display: none;
+}
+
+.eael-post-grid-container
+    .eael-entry-wrapper
+    .eael-entry-content
+    .eael-post-elements-readmore-btn {
+    color: var(--extel-orange-color) !important;
+    border: 2px solid var(--extel-orange-color);
+    padding: 7px 25px;
+    font-family: var(--extel-font-family-pt-sans);
+    font-size: 16px;
+    border-radius: 6px;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+}
+
+.eael-post-grid-container
+    .eael-entry-wrapper
+    .eael-entry-content
+    .eael-post-elements-readmore-btn:hover {
+    background-color: var(--extel-orange-color);
+    color: #fff !important;
+}
+
+/*  Meet the Team Page */
+.teamcol .teammemtitle {
+    font-size: 24px !important;
+    font-family: var(--extel-font-family-sommet);
+    margin-bottom: -10px;
+    margin-top: 20px;
+}
+.teamtl,
+.abot h2,
+.teamcareer h2,
+.teambtrr h2 {
+    font-family: var(--extel-font-family-sommet);
+}
+.teammjobtitle {
+    margin-bottom: 15px !important;
+}
+
+.teammjobtitle,
+.teammjobtitle p,
+.abot p,
+.teamcareer p,
+.teambtrr p {
+    font-family: var(--extel-font-family-pt-sans);
+    color: var(--extel-gray-color);
+}
+
+.biolink button {
+    font-size: 15px;
+    line-height: 1em;
+    padding: 12px 24px;
+    border-radius: 10px;
+    color: var(--extel-orange-color);
+}
+
+.biolink button:hover {
+    color: #ffffff;
+}
+
+.btmbuttn button {
+    font-size: 14px;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.modal-footer button {
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-family: var(--extel-font-family-pt-sans);
+    border: 2px solid var(--extel-orange-color);
+}
+
+.modal-footer button:hover {
+    background-color: var(--extel-orange-color);
+    color: #ffffff;
+    border: 2px solid var(--extel-orange-color);
+}
+
+.keepconnected wp-caption img {
+    cursor: inherit;
+}
+
+.keepconnected .wp-caption-text {
+    position: absolute;
+    top: 0;
+    color: #fff !important;
+    right: 15px;
+    font-size: 18px;
+    font-family: 'sommet', Sans-serif !important;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.site-footer .footer-adv a {
+    color: #5f6f7e !important;
+}
+
+.site-footer .footer-adv a:hover {
+    color: var(--extel-orange-color) !important;
+}
+
+.site-footer .icons_co {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+}
+
+.site-footer .icons_co a:hover i {
+    background: var(--extel-orange-color);
+}
+
+.site-footer .touc_in a {
+    color: var(--extel-orange-color) !important;
+    border: 2px solid var(--extel-orange-color);
+    padding: 7px 25px;
+    font-family: var(--extel-font-family-pt-sans);
+    font-size: 16px;
+    border-radius: 6px;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+}
+
+.site-footer .touc_in:hover a {
+    background-color: var(--extel-orange-color) !important;
+    color: #fff !important;
+}
+
+.projects-slider .swiper-pagination {
+    display: none;
+}
+
+.projects-slider figcaption.elementor-image-carousel-caption {
+    width: 100%;
+    transform: translateY(180px);
+}
+
+.certification-2162 .show-download-popup,
+.certification-2158 .show-download-popup,
+.certification-2157 .show-download-popup,
+.certification-2156 .show-download-popup {
+    display: none;
+}
+./**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+/* CERTIFICATIONS LIST */
+
+:root {
+    --extel-gray-color: #5f6f7e;
+    --extel-orange-color: #ffaa46;
+
+    --extel-font-family-pt-sans: 'PT Sans', Sans-serif !important;
+    --extel-font-family-sommet: 'sommet', Sans-serif !important;
+}
+.certifications-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 60px;
+    grid-row-gap: 80px;
+    margin-bottom: 80px;
+}
+
+.single-certifiation {
+}
+
+.single-certification .certification-thumbnail {
+    margin-bottom: 25px;
+}
+
+.single-certification .certification-thumbnail a {
+    display: block;
+}
+
+.single-certification .certification-thumbnail img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+
+.single-certification .certification-info h3 {
+    font-size: 36px;
+    font-family: var(--extel-font-family-sommet);
+}
+
+.single-certification .certification-info h3 a {
+    color: #000;
+}
+
+.single-certification .certification-info h4 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #5f6f7e;
+    line-height: 1.4;
+    font-family: var(--extel-font-family-pt-sans);
+}
+
+.single-certification .certification-buttons {
+    margin: 0;
+    list-style-type: none;
+    font-family: sans-serif;
+    display: flex;
+}
+
+.single-certification .certification-buttons li {
+    margin-bottom: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    width: 150px;
+}
+
+.single-certification .certification-buttons li a {
+    padding: 12px 24px;
+    color: #000000;
+    font-size: 15px;
+    font-family: var(--extel-font-family-pt-sans);
+    font-weight: 500;
+    background-color: #ffffff;
+    border: 2px solid var(--extel-orange-color);
+    border-radius: 10px;
+    flex-grow: 1;
+    text-align: center;
+    margin-right: 10px;
+    color: var(--extel-orange-color);
+}
+
+.single-certification .certification-buttons li a:hover {
+    color: #ffffff;
+    background-color: var(--extel-orange-color);
+    color: #ffffff;
+}
+
+/* CERTIFICATION POPUP */
+.certificationPopup__cover {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 99999;
+}
+.certification__popup {
+    position: relative;
+    padding: 20px;
+    max-width: 1000px;
+    background-color: #ffffff;
+}
+.certification__popup-content {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-column-gap: 20px;
+}
+.certification__popup-content--left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.certification__popup-content--left .cert-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+.certification__popup-content--left .cert-next-prev {
+    margin: 0;
+    list-style-type: none;
+}
+.certification__popup-content--left .cert-next-prev li {
+    display: inline-block;
+}
+.certification__popup-content--left .cert-next-prev li .accreditation-adjacent {
+    display: inline-block;
+    font-size: 16px;
+    color: #000;
+    cursor: pointer;
+}
+.certification__popup-content--left
+    .cert-next-prev
+    li
+    .accreditation-adjacent
+    .dashicons {
+    font-size: 16px;
+}
+.certification__popup-content--left
+    .cert-next-prev
+    li
+    .accreditation-adjacent
+    i {
+    transform: translateY(7px);
+}
+.certification__popup-content--left .cert-next-prev li:first-child {
+    float: left;
+}
+.certification__popup-content--left .cert-next-prev li:last-child {
+    float: right;
+}
+.certification__popup-content--right .cert-title {
+    font-size: 36px;
+    font-family: var(--extel-font-family-sommet);
+}
+.certification__popup-content--right .cert-subtitle {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #5f6f7e;
+    line-height: 1;
+    font-family: var(--extel-font-family-pt-sans);
+}
+.certification__popup-content--right h4 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #000000;
+    font-family: var(--extel-font-family-pt-sans);
+}
+.certification__popup-content--right .cert-content {
+    padding-right: 20px;
+}
+.certification__popup-content--right .cert-content p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #707070;
+    line-height: 1.4;
+    font-family: var(--extel-font-family-pt-sans);
+}
+.cert-download-form .form-title {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: var(--extel-orange-color);
+    font-family: var(--extel-font-family-pt-sans);
+}
+.cert-download-form .cert-field {
+    margin-bottom: 20px;
+}
+
+.cert-download-form .cert-field input[type='text'],
+.cert-download-form .cert-field input[type='email'] {
+    padding: 15px 20px;
+    max-width: 400px;
+    width: 100%;
+    background-color: transparent;
+    border: 2px solid var(--extel-orange-color);
+    border-radius: 10px;
+}
+.cert-download-form .cert-field input[type='submit'] {
+    padding: 15px 20px;
+    background-color: var(--extel-orange-color);
+    border-radius: 10px;
+}
+.cert-download-form .form-notice-text,
+.wpcf7-response-output {
+    font-size: 14px;
+    font-family: sans-serif;
+    color: #707070;
+    border: none !important;
+    padding: 0 !important;
+}
+.certification__popup .close__popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.certification__popup .close__popup span {
+    display: block;
+    width: 35px;
+    height: 35px;
+    line-height: 33px;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 50%;
+    color: #204063;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+/* Extra CSS */
+.logged-in div.wpcf7 {
+    margin-top: 30px !important;
+}
+
+/* Post Grid Styling */
+.eael-post-grid-container .eael-grid-post-holder {
+    border: none;
+}
+
+.eael-post-grid-container .eael-entry-overlay {
+    display: none;
+}
+
+.eael-post-grid-container .eael-entry-thumbnail {
+    margin-bottom: 20px;
+}
+.eael-post-grid-container .eael-entry-wrapper {
+    padding: 0 !important;
+}
+
+.eael-post-grid-container .eael-entry-wrapper .eael-entry-header {
+    font-family: var(--extel-font-family-sommet);
+    font-size: 1.333rem;
+    line-height: 1.5;
+    color: #3a3a3a;
+}
+
+.eael-post-grid-container .eael-entry-wrapper .eael-entry-content {
+    margin-bottom: 20px;
+    font-family: var(--extel-font-family-pt-sans);
+    font-size: 16px !important;
+    line-height: 1.5;
+    color: #707070;
+}
+
+.eael-post-grid-container .eael-entry-wrapper .eael-entry-content p {
+    margin-bottom: 10px;
+}
+
+.eael-post-grid-container .eael-entry-wrapper .eael-entry-meta {
+    margin-bottom: 5px;
+    font-family: var(--extel-font-family-sommet);
+    font-size: 15px;
+    color: #0e7de6;
+}
+
+.eael-post-grid-container .eael-entry-wrapper .eael-entry-meta .eael-posted-on {
+    padding: 0 !important;
+}
+
+.eael-post-grid-container
+    .eael-entry-wrapper
+    .eael-entry-meta
+    .eael-posted-on:before {
+    display: none;
+}
+
+.eael-post-grid-container
+    .eael-entry-wrapper
+    .eael-entry-content
+    .eael-post-elements-readmore-btn {
+    color: var(--extel-orange-color) !important;
+    border: 2px solid var(--extel-orange-color);
+    padding: 7px 25px;
+    font-family: var(--extel-font-family-pt-sans);
+    font-size: 16px;
+    border-radius: 6px;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+}
+
+.eael-post-grid-container
+    .eael-entry-wrapper
+    .eael-entry-content
+    .eael-post-elements-readmore-btn:hover {
+    background-color: var(--extel-orange-color);
+    color: #fff !important;
+}
+
+/*  Meet the Team Page */
+.teamcol .teammemtitle {
+    font-size: 24px !important;
+    font-family: var(--extel-font-family-sommet);
+    margin-bottom: -10px;
+    margin-top: 20px;
+}
+.teamtl,
+.abot h2,
+.teamcareer h2,
+.teambtrr h2 {
+    font-family: var(--extel-font-family-sommet);
+}
+.teammjobtitle {
+    margin-bottom: 15px !important;
+}
+
+.teammjobtitle,
+.teammjobtitle p,
+.abot p,
+.teamcareer p,
+.teambtrr p {
+    font-family: var(--extel-font-family-pt-sans);
+    color: var(--extel-gray-color);
+}
+
+.biolink button {
+    font-size: 15px;
+    line-height: 1em;
+    padding: 12px 24px;
+    border-radius: 10px;
+    color: var(--extel-orange-color);
+}
+
+.biolink button:hover {
+    color: #ffffff;
+}
+
+.btmbuttn button {
+    font-size: 14px;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.modal-footer button {
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-family: var(--extel-font-family-pt-sans);
+    border: 2px solid var(--extel-orange-color);
+}
+
+.modal-footer button:hover {
+    background-color: var(--extel-orange-color);
+    color: #ffffff;
+    border: 2px solid var(--extel-orange-color);
+}
+
+.keepconnected wp-caption img {
+    cursor: inherit;
+}
+
+.keepconnected .wp-caption-text {
+    position: absolute;
+    top: 0;
+    color: #fff !important;
+    right: 15px;
+    font-size: 18px;
+    font-family: 'sommet', Sans-serif !important;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.site-footer .footer-adv a {
+    color: #5f6f7e !important;
+}
+
+.site-footer .footer-adv a:hover {
+    color: var(--extel-orange-color) !important;
+}
+
+.site-footer .icons_co {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+}
+
+.site-footer .icons_co a:hover i {
+    background: var(--extel-orange-color);
+}
+
+.site-footer .touc_in a {
+    color: var(--extel-orange-color) !important;
+    border: 2px solid var(--extel-orange-color);
+    padding: 7px 25px;
+    font-family: var(--extel-font-family-pt-sans);
+    font-size: 16px;
+    border-radius: 6px;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+}
+
+.site-footer .touc_in:hover a {
+    background-color: var(--extel-orange-color) !important;
+    color: #fff !important;
+}
+
+.projects-slider .swiper-pagination {
+    display: none;
+}
+
+.projects-slider figcaption.elementor-image-carousel-caption {
+    width: 100%;
+    transform: translateY(180px);
+}
+
+.certification-2162 .show-download-popup,
+.certification-2158 .show-download-popup,
+.certification-2157 .show-download-popup,
+.certification-2156 .show-download-popup {
+    display: none;
+}
+.core-capabilities-contenet .panel a {
+    padding: 12px 24px !important;
+    display: inline-block;
+    margin-top: 20px;
+    color: var(--extel-orange-color) !important;
+}
+.core-capabilities-contenet .panel a:hover {
+    background-color: var(--extel-orange-color) !important;
+    color: #ffffff !important;
+}
+
+.in-the-media .content a {
+    padding: 12px 24px !important;
+    border-radius: 10px !important;
 }
