@@ -94,9 +94,14 @@ function show_certifications() {
                     <h3><a href="#!"><?php the_title(); ?></a></h3>
                     <h4><?php the_field('certification_tagline'); ?></h4>
                 </div>
+
+                <?php $check_download_status = get_field('show_download_form', get_the_ID()); ?>
+
                 <ul class="certification-buttons">
                     <li><a href="#!" data-certificate-id="<?php the_ID(); ?>" class='show-readmore-popup'>Read more</a></li>
+                    <?php if($check_download_status == 1 ) { ?>
                     <li><a href="#!" data-certificate-id="<?php the_ID(); ?>" class='show-download-popup'>Download</a></li>
+                    <?php } ?>
                 </ul>
             
             </div>
@@ -186,9 +191,13 @@ function data_fetch_certifications() {
             <?php echo $get_certificate->post_content; ?>
         </div>
 
+        <?php $check_download_status_popup = get_field('show_download_form', $get_certificate->ID); ?>
+
+        <?php if($check_download_status_popup == 1 ) { ?>
         <div class="cert-download-form">
             <?php echo do_shortcode('[contact-form-7 id="2277" title="Download Certification Form"]'); ?>
         </div>
+        <?php } ?>
     </div>
     <?php
 
