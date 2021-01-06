@@ -1336,3 +1336,81 @@
     padding: 12px 24px !important;
     border-radius: 10px !important;
 }
+
+
+
+/* Form Styling */
+.nf-form-title h3 {
+    font-size: 36px;
+    font-family: var(--extel-font-family-sommet);
+}
+.nf-form-layout .nf-form-fields-required {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--extel-orange-color);
+    font-family: var(--extel-font-family-pt-sans);  
+}
+.nf-form-layout .nf-field-label {
+    color: var(--extel-orange-color);
+    font-family: var(--extel-font-family-pt-sans);
+    font-weight: 500;
+}
+
+.nf-form-layout .nf-field .nf-field-element input[type="text"], .nf-form-layout .nf-field .nf-field-element input[type="email"], .nf-form-layout .nf-field .nf-field-element input {
+    padding: 15px 20px;
+    max-width: 100%;
+    width: 100%;
+    background-color: transparent;
+    border: 2px solid var(--extel-orange-color);
+    border-radius: 10px;
+}
+.nf-form-layout .nf-field .nf-field-element input[type="button"] {
+    padding: 15px 20px;
+    color: var(--extel-orange-color);
+    border: 2px solid var(--extel-orange-color);
+    border-radius: 10px;
+    max-width: inherit;
+    width: auto;
+    cursor: pointer;
+}
+.nf-form-layout .nf-field .nf-field-element input[type="button"]:hover {
+    background-color: var(--extel-orange-color);
+    color: #ffffff;
+}
+
+.nf-form-layout .nf-error.field-wrap .nf-field-element::after {
+    border-radius: 10px; 
+}
+.pum-container .popmake-close {
+    overflow: hidden !important;
+    width: 50px !important;
+    height: 35px !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    color: #000000 !important;
+}
+.pum-container .popmake-close::before {
+    content: "\f158";
+    font-family: dashicons;
+    display: inline-block;
+    line-height: 1;
+    font-weight: 400;
+    font-style: normal;
+    speak: none;
+    text-decoration: inherit;
+    text-transform: none;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    vertical-align: top;
+    text-align: center;
+    transition: color .1s ease-in;
+}
+
+.pum.pum-overlay {
+    background-color: #ffffff;
+}
