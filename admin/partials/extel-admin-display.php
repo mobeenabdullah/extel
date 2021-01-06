@@ -145,7 +145,7 @@ function cpt_get_adjacent_ID($direction = 'next', $type = 'post', $current) {
 
 // Certification Popup
 function certification_popup() {
-    if ( is_page( 'certifications' ) ) { ?>
+    if ( is_page( 'accreditations' ) ) { ?>
         <!-- Popup --> 
         <div class="certificationPopup__cover">
             <div class="certification__popup">
