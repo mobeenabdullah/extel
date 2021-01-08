@@ -195,7 +195,8 @@ function data_fetch_certifications() {
 
         <?php if($check_download_status_popup == 1 ) { ?>
         <div class="cert-download-form">
-            <?php echo do_shortcode('[contact-form-7 id="2277" title="Download Certification Form"]'); ?>
+            <span class="accreditation_attachment_url" style="display: none;"><?php echo get_field('accreditation_attachment', $get_certificate->ID); ?></span>
+            <?php echo do_shortcode('[contact-form-7 id="2126" title="Download Certification Form"]'); ?>
         </div>
         <?php } ?>
     </div>
