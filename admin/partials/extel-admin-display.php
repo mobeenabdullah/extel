@@ -175,7 +175,7 @@ function data_fetch_certifications() {
                 $next_certificate_id = cpt_get_adjacent_ID('next', 'certification', $get_certificate->ID);
             ?>
             <li>
-                <span class="prev-accreditation accreditation-adjacent" data-certificate-id="<?php echo $prev_certificate_id; ?>">prev accreditation</span>
+                <span class="prev-accreditation accreditation-adjacent" data-certificate-id="<?php echo $prev_certificate_id; ?>">prev. accreditation</span>
             </li>
             <li>
                 <span class="next-accreditation accreditation-adjacent" data-certificate-id="<?php echo $next_certificate_id; ?>">next accreditation</span>
@@ -196,7 +196,7 @@ function data_fetch_certifications() {
         <?php if($check_download_status_popup == 1 ) { ?>
         <div class="cert-download-form">
             <span class="accreditation_attachment_url" style="display: none;"><?php echo get_field('accreditation_attachment', $get_certificate->ID); ?></span>
-            <?php echo do_shortcode('[contact-form-7 id="2126" title="Download Certification Form"]'); ?>
+            <?php echo do_shortcode('[contact-form-7 id="2277" title="Download Certification Form"]'); ?>
         </div>
         <?php } ?>
     </div>
