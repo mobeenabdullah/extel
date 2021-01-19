@@ -564,6 +564,7 @@
     color: #ffffff;
 }
 
+<<<<<<< HEAD
 .htslider-slider .slick-arrow {
 	top: 45% !important;
 }
@@ -584,6 +585,8 @@
     padding-top: 20px !important;
 }
 
+=======
+>>>>>>> 323889cb1c99f16458890e69b1129e9b40ad3ac7
 /* Mobile Responsive */
 
 @media only screen and (max-width: 600px) {
@@ -631,8 +634,11 @@
     }
     .tabbedPanels .tabs.for_b_tabs li a img {
         height: 45px !important;
+<<<<<<< HEAD
         width: 45px;
         object-fit: contain;
+=======
+>>>>>>> 323889cb1c99f16458890e69b1129e9b40ad3ac7
     }
     .tabbedPanels .tabs.for_b_tabs li p {
         font-size: 12px !important;
@@ -640,6 +646,7 @@
     }
 
     .site-content {
+<<<<<<< HEAD
     padding-top: 10px !important;
     }
 
@@ -692,4 +699,8 @@
     }
 
   
+=======
+        padding-top: 10px !important;
+    }
+>>>>>>> 323889cb1c99f16458890e69b1129e9b40ad3ac7
 }

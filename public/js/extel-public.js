@@ -23,6 +23,17 @@
 				
 						wpcf7.initForm($(this));
 					});
+
+					const getSelectedAccreditation = $('.accreditation_attachment_url').text();
+
+					$('.selected-accreditations').val(getSelectedAccreditation);
+
+					document.addEventListener('wpcf7mailsent', function (event) {
+						setTimeout(function () {
+							location = getSelectedAccreditation;
+						}, 3000);
+					}, false);
+					
 				}
 			});
 		}
